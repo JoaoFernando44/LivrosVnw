@@ -1,0 +1,104 @@
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
+}
+
+.boxLogo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 120px;
+  justify-content: space-evenly;
+}
+
+.boxLogo h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.boxMenu {
+  width: 450px;
+  @media (max-width:760px) {
+    width: 390px;
+  }
+}
+
+
+.boxMenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.boxMenu ul a {
+  color: white;
+}
+
+.boxSearch {
+  border: solid 2px white;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.boxInput {
+  border: none;  
+  outline: none;
+  width: 200px;
+  background-color: transparent;
+  padding-left: 18px;
+  color: white;
+  font-size: 16px;
+}
+
+.boxInput::placeholder {
+  color: white;
+}
+
+@media (max-width: 1170px) {
+  .boxLogo h1 {
+      font-size: 1.7rem;
+  }
+  .boxLogo img {
+      width: 5rem;
+  }
+
+  .boxMenu ul {
+      font-size: 1.2rem;
+  }
+
+  .boxSearch {
+      width: 220px;
+  } 
+
+  .boxInput {
+      width: 180px;
+      font-size: 1rem;
+  }
+
+  .boxInput::placeholder {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+      height: auto;
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  .boxSearch {
+      display: none;
+  }
+}

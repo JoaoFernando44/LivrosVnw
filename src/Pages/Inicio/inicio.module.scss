@@ -1,0 +1,58 @@
+.post{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    h2{ 
+        width: 27vw;
+        margin-left: 130px;
+        font-size: 40px;
+    }
+}
+
+.devoDoar{
+    margin: 3rem 0; 
+    div{     
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: rgba(0, 86, 149, 1);
+            margin-left: 65px;
+        }
+    }
+}
+
+.boxCard {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boxCard article {
+    width: 286px;
+    height: 321px;  
+    background-color: rgba(1, 87, 148, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    @media (max-width:1143px) {
+        margin-top: 1rem;
+    }
+}
+
+.boxCard article p {
+    width: 252px;
+    font-size: 22px;
+    text-align: center;  
+}
+
+
