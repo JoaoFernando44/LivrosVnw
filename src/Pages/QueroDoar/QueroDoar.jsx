@@ -24,6 +24,11 @@ export default function QueroDoar(){
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(DadosParaApi)
+        }).then(()=>{
+            setTitulo('')
+            setCategoria('')
+            setAutor('')
+            linkDaImagem('')
         })
     }
 
